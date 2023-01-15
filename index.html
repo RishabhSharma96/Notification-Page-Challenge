@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Notifications page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/blobz.min.css">;
+</head>
+
+<body>
+  <div class="content">
+    <div class="header">
+      <h3 class="notify">Notifications</h3>
+      <div id="number">3</div>
+      <h3 onclick="decrementAll()" class="mark"><a href="#">Mark all as read</a></h3>
+    </div>
+
+   
+
+    <div class="notifications">
+      <div onclick="decrement(0)" class="not1 unread">
+        <div class="imagediv"><img src="/assets/images/avatar-mark-webber.webp" alt=""></div>
+        <div class="contentdiv">
+          <span class="black">Mark Webber </span><span class="grey">reacted to your recent post </span><span
+            class="Bgrey">
+            My first tournament today!</span><br>
+          <span class="grey">1m ago</span>
+        </div>
+
+      </div>
+
+      <div onclick="decrement(1)" class="not1 unread">
+        <div class="imagediv"><img src="/assets/images/avatar-angela-gray.webp" alt=""></div>
+        <div class="contentdiv">
+          <span>Angela Gray </span><span class="grey">
+            followed you</span><br>
+          <span class="grey">1 day ago</span>
+        </div>
+
+
+      </div>
+
+      <div onclick="decrement(2)" class="not1 unread">
+        <div class="imagediv"><img src="/assets/images/avatar-jacob-thompson.webp" alt=""></div>
+        <div class="contentdiv">
+          <span class="black">Jacob Thompson </span><span class="grey">
+            has joined your group </span><span class="blue">Chess Club</span></span><br>
+          <span class="grey">1 day ago</span>
+        </div>
+
+      </div>
+
+      <div class="not1">
+        <div class="imagediv"><img src="/assets/images/avatar-rizky-hasanuddin.webp" alt=""></div>
+        <div class="contentdiv">
+          <span class="black">Rizky Hasanuddin </span><span class="grey">
+            sent you a private message</span><br>
+          <span class="grey">5 days ago</span>
+          <div class="message">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            I'm already having lots of fun and improving my game.
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="not1">
+        <div class="imagediv"><img src="/assets/images/avatar-kimberly-smith.webp" alt=""></div>
+        <div class="contentdiv">
+          <span class="black">Kimberly Smith </span><span class="grey">
+            commented on your picture</span><br>
+          <span class="grey">1 week ago</span>
+        </div>
+        <div class="img2">
+          <img src="/assets/images/image-chess.webp" alt="">
+        </div>
+
+      </div>
+
+      <div class="not1">
+        <div class="imagediv"><img src="/assets/images/avatar-nathan-peterson.webp" alt=""></div>
+        <div class="contentdiv">
+          <span class="black">Nathan Peterson </span><span class="grey">
+            reacted to your recent post </span><span class="Bgrey">5 end-game strategies to increase your win
+            rate</span><br>
+          <span class="grey">2 weeks ago</span>
+        </div>
+
+
+      </div>
+
+      <div class="not1">
+        <div class="imagediv"><img src="/assets/images/avatar-anna-kim.webp" alt=""></div>
+        <div class="contentdiv">
+          <span class="black">Anna Kim </span><span class="grey">
+            left the group </span><span class="blue">Chess Club</span><br>
+          <span class="grey">2 weeks ago</span>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
